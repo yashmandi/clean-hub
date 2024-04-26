@@ -21,17 +21,27 @@ function Hero() {
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]'>
             {/* text content section */}
             <div className="space-y-7 text-dark order-2 sm:order-1">
-              <h1 className='text-5xl'>Fresh and healthy meal plan <span className='text-blue-600 font-cursive text-7xl'>delivery</span> in Pune!</h1>
-              <p className='lg:pr-64'>
-                Delicious meals delivered to your door from $123.45 per week.
+              <h1 data-aos="fade-up" className='text-5xl'>Fresh and healthy meal <span className='text-blue-600 font-cursive text-7xl'>delivery</span> in Pune!</h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className='lg:pr-64'>
+                Savor gourmet meals delivered at just $41 to your doorstep with <span className='font-semibold'> Flavora.</span>
               </p>
               {/* button section */}
-              <div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="500"
+                className='flex justify-left mt-10 sm:mt-14 inline-block ml-2 group-hover:ml-4 duration-300 mb-8'>
+
                 <PrimaryButton />
               </div>
             </div>
             {/* image section */}
-            <div className='relative z-30 order-1 sm:order-2'>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              className='relative z-30 order-1 sm:order-2'>
               <img src={HeroImg} alt="" className='w-full sm:scale-125 sm:translate-y-16' />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCaretDown, FaUser } from "react-icons/fa"
 
-function Navbar() {
+function Navbar({ handlePopup }) {
     const Navlinks = [
         {
             id: 1,
@@ -40,7 +40,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className="bg-white shadow-md">
+            <div data-aos="fade" className="bg-white shadow-md">
                 <div className="container flex justify-between py-4 sm:py-4">
                     <div className="font-bold text-4xl mt-">flavora.</div>
                     <div>
@@ -48,10 +48,10 @@ function Navbar() {
                             {Navlinks.map(({ id, name, link }) => (
                                 <li key={id}>
                                     <a href={link}
-                                        className="text-gray-900 hover:text-blue-700 duration-300 text-xl">{name}</a>
+                                        className="hidden sm:inline-block text-gray-900 hover:text-blue-700 duration-300 text-xl">{name}</a>
                                 </li>
                             ))}
-                            <li className="cursor-pointer group">
+                            <li className="hidden md:block cursor-pointer group">
                                 <a
                                     href="/#"
                                     className="inline-block hover:text-text-blue-700 text-xl font-semibold">
@@ -79,7 +79,9 @@ function Navbar() {
                             </li>
                             {/* login button */}
                             <li>
-                                <button className="flex justify-center items-center gap-2 bg-blue-300  text-xl h-[40px] px-5 py-2 hover:scale-105 duration-300 rounded-md">
+                                <button
+                                    onClick={handlePopup}
+                                    className="flex justify-center items-center gap-2 bg-blue-300  text-xl h-[40px] px-5 py-2 hover:scale-105 duration-300 rounded-md">
                                     <FaUser />
                                     My Account
                                 </button>

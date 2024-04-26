@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 
 function Footer() {
     return (
-        <div className='bg-gradient-to-b from-teal-900 to bg-primary rounded-t-3xl text-white mt-20'>
+        <div data-aos="fade-down" className='bg-gradient-to-b from-teal-900 to bg-primary rounded-t-3xl text-white mt-20'>
             <div className='container'>
                 {/* Heading section */}
                 <h1 className='py-10 text-3xl font-bold text-yellow text-center'>Contact us</h1>

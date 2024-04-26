@@ -6,7 +6,7 @@ import leaf from '../../assets/png/leaf.png'
 import tomato from '../../assets/png/tomato.png'
 import PrimaryButton from '../Shared/PrimaryButton'
 
-function Banner() {
+function Banner2() {
     return (
         <div>
             <div className='container'>
@@ -17,7 +17,7 @@ function Banner() {
                                 <img src={leaf} alt="" className='max-w-[160px]' />
                             </div>
                             <h1 data-aos="fade-up" data-aos-delay="300" className="py-8 tracking-wider text-2xl font-semibold text-dark text-center">
-                                Taste the Freshness, Embrace the Wellness with Flavora
+                                Flavora: Fueling Health, Flavoring Life
                             </h1>
                             <div data-aos="fade-right" className='absolute top-1/2 -translate-y-1/2 ml-[800px]'>
                                 <img src={kiwi} alt="" className='max-w-[180px]' />
@@ -29,7 +29,7 @@ function Banner() {
                                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10'>
                                     <p data-aos="fade-up" data-aos-delay="300" >
                                         {" "}
-                                        Discover the convenience of <span className=' font-bold'>Flavora's</span> meal plans! Enjoy fresh, healthy meals delivered right to your doorstep in Pune, saving you time and effort in meal preparation.
+                                        Embrace a healthier lifestyle with <span className=' font-bold'>Flavora's</span> meal delivery service! From busy professionals to fitness enthusiasts, our convenient and nutritious meals empower individuals in Pune to fuel their bodies with quality food, promoting sustained energy and productivity.
                                     </p>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ function Banner() {
                             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 py-10'>
                                 <p data-aos="fade-up" data-aos-delay="300" >
                                     {" "}
-                                    Say goodbye to meal prep stress with <span className=' font-bold'>Flavora!</span> Our expert chefs and nutritionists craft each meal with care, using only the freshest ingredients to guarantee both taste and wellness in every bite.
+                                    the <span className=' font-bold'>Flavora</span> community and prioritize your health effortlessly! With our meal plans, you'll not only enjoy delicious flavors but also maintain a balanced diet, supporting your overall well-being and vitality.
                                 </p>
 
                                 <div
@@ -61,4 +61,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Banner2
